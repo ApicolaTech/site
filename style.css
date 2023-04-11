@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+body {
+  background-color: #0d0d0d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 0, 0.5);
+  margin-bottom: 60px;
+  width: 100vw;
+}
+img {
+  width: 60px;
+}
+
+#logo {
+  margin: auto;
+}
+#main {
+  width: 400px;
+  height: 510px;
+  background-color: #151515;
+  border: solid 1px rgba(255, 255, 0, 0.5);  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border-radius: 20px;
+}
+#posicao {
+  margin: 0 0 0 50px;
+}
+h1 {
+  margin: 20px 0 0 0;
+  color: white;
+  letter-spacing: 2px;
+}
+h3 {
+  margin: 10px 0;
+  color: white;
+}
+p {
+  margin: 15px 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 1);
+}
+input {
+  background: none;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 99px;
+  font-size: 16px;
+  width: 300px;
+  height: 50px;
+  padding: 0 0 0 20px;
+  color: white;
+  transition: 0.5s;
+}
+input:hover {
+    transition: 0.5s;
+    border-radius: 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    box-shadow: 0px 10px 19px -19px #FFFFFF;
+
+}
+input:focus {
+outline: none;
+box-shadow: 0px 10px 19px -19px #FFFFFF;
+  border-radius: 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+::placeholder {
+  color: white;
+}
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
+
+#linkSenha {
+    float: right;
+    margin: 20px 50px 20px auto;
+}
+#linkSenha a{
+    color: yellow;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#linkSenha a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    width: 300px;
+    height: 50px;
+    border-radius: 99px;
+    font-weight: 900;
+    font-size: 20px;
+    background-color: rgba(255, 255, 80);
+    color: black;
+    transition: 0.5s;
+    padding-bottom: 5px;
+}
+button:hover {
+    transition: 0.5s;
+    color: white;
+    box-shadow: 0px 0px 10px yellow;
+    border: none;
+
+}
