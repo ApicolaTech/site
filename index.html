@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    </style>
-  </head>
-  <body>
-    <div id="header">
-      <a id="logo" href="#"><img src="./src/logo.png" alt="" /></a>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;700&;family=Roboto+Mono:wght@700display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?&display=swap" rel="stylesheet"> -->
+    <title>hiveLens</title>
+</head>
+<body>
+    <div class="header">
+        <nav>
+           <img class="logo" src="LogoEmpresa3.png" alt="logo">
+            <ul>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Time</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <button type="button">Entrar</button>
+        </nav>
+
+       
+            <div class="container">
+                <div class="caixa">
+                    <h1 class="titulo">O melhor da <span class="xxx">Apicultura</span></h1>
+                    <p>Nossa missão é ajudar os nossos clientes a aumentar sua produção de mel através de nossa solução IoT, o <b>hiveLens</b></b>.</p>
+                    <div class="botoesDuplo">
+                        <button>Saiba mais</button>
+                        <button>Simular lucros</button>
+                    </div>
+                </div>
+                <div class="imgInicial">
+                    <img src="abelinha.png" alt="foto incial">
+                </d iv>
+            </div>
+        
+
+
+        
     </div>
-    <div id="main">
-      <div id="posicao">
-        <h1>Entrar</h1>
-        <p>
-          Bem-vindo de volta, entre na sua conta e tenha <br />acesso aos nossos
-          serviços.
-        </p>
-        <div id="entrada">
-          <h3>Email</h3>
-          <input type="email" placeholder="Your email" required="required"/>
-        </div>
-        <div id="entrada">
-          <h3>Senha</h3>
-          <input type="password" placeholder="Your password" />
-        </div>
-        <div id="linkSenha">
-            <a href="#">Esqueceu a senha?</a>
-        </div>
-        <div id="entrar">
-            <button>Entrar</button>
-        </div>
-      </div>
-    </div>
-  </body>
+</body>
 </html>
