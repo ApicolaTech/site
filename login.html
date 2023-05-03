@@ -40,8 +40,6 @@
             type="email"
             id="email"
             placeholder="nome@exemplo.com"
-            required
-            inputmode="email"
             onkeydown="verEmail()"
           /> <br>
           <span id="erroEmail"></span>
@@ -52,9 +50,6 @@
             id="senha"
             type="password"
             placeholder="Senha"
-            required
-            minlength="8"
-            maxlength="255"
             onkeydown="verSenha()"
           />
           <span id="visualSenha"
@@ -133,7 +128,7 @@
         var email = document.querySelector('#email').value;
         var senha = document.querySelector('#senha').value;
         if (email == "caramico@gmail.com" && senha == "sptechSchool") {
-            location.href = "./Cadastro.html";
+            location.href = "./servicos.html";
         } else {
           erro.style.display = 'block'
         }
