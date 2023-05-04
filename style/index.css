@@ -552,47 +552,30 @@ label {
 
 footer {
     background-color: #E0CA3C;
-    color: #020200;
-    padding: 5px 0;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.row {
+    width: 100%;
+    height: 140px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    margin: 80px 0 0 0;
 }
 
-.col-md-4 {
-    flex-basis: 10%;
-    max-width: 30%;
+div.RedeSocial {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.tituloContato h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
+div.RedeSocial img{
+    width: 50px;
 }
 
-.social-icons a {
-    display: inline-block;
-    color: #020200;
-    font-size: 24px;
-    margin-right: 20px;
+div.contato {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.contact li {
-    margin-bottom: 10px;
-}
-
-.contact li i {
-    margin-right: 10px;
-}
-
-p {
-    margin-bottom: 10px;
-    color: #020200;
-}
