@@ -34,7 +34,7 @@ h1 {
 }
 
 .inputs {
-    color: rgb(235, 232, 56);
+    color: #E0CA3C;
     margin: 20px 0 20px 140px;
 }
 
@@ -42,7 +42,7 @@ input {
     background: none;
     border: none;
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: 99px;
+    border-radius: 0px;
     font-size: 16px;
     width: 300px;
     height: 50px;
@@ -66,24 +66,24 @@ input:focus {
     border-bottom: 1px solid rgba(255, 255, 255, 1);
 }
 
-button {
+button{
+    border: solid #E0CA3C;
+    background-color: rgba(255, 255, 0, 0.007);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 99px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 5px 0px 5px 140px;
     width: 440px;
     height: 60px;
     font-size: 25px;
-    margin: 5px 0px 5px 140px;
-    border-radius: 99px;
-    color: white;
-    background-color: rgb(235, 232, 10);
-    font-style: none;
 }
-
-button:hover {
-    transition: 0.5s;
-    color: white;
-    box-shadow: 0px 0px 10px yellow;
-    border: none;
-    font-style: none;
-}
+button:hover{
+    color: #E0CA3C;
+    transition: .3s;
+} 
 
 #cadastro {
     color: white;

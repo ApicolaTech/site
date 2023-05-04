@@ -28,7 +28,9 @@ body {
 
 .imgProduto{
     display: flex;
-    width: 30%;
+    width: 50vw;
+    height: 250px;
+    margin-left: 20px;
 
 }
 
@@ -36,6 +38,7 @@ body {
 
     width: 30%;
     justify-content: center;
+    margin-right: 100px;
 }
 
 .informacoesProduto h3{

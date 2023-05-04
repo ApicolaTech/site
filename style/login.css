@@ -12,12 +12,14 @@ body {
   align-items: center;
 }
 
-#header {
-  border-bottom: 1px solid rgba(255, 255, 0, 0.5);
+.header h1 {
+  border-bottom: 1px solid #E0CA3C;
   width: 100vw;
   display: flex;
   justify-content: center;
   padding: 10px 0;
+  color: #E0CA3C;
+  font-family: 'Inria Serif'; font-size: 50px;
 }
 
 img {
@@ -33,7 +35,7 @@ img {
   width: 400px;
   height: 510px;
   background-color: #151515;
-  border: solid 1px rgba(255, 255, 0, 0.5);
+  border: solid 1px #E0CA3C;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   border-radius: 20px;
@@ -128,7 +130,7 @@ input:focus {
 
 #cadastro a {
   text-decoration: none;
-  color: yellow;
+  color: #E0CA3C;
 }
 
 #entrar {
