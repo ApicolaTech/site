@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TelaDash.css">
+    <link rel="icon" href="img/colmeia-de-abelhas.png">
+    <title>Apiários</title>
+</head>
+<body>
+    <div id="container">
+        <nav id="menu-dashboard">
+            <ul>
+                <a href="index.html" id="logo"><span>APÍCOLA</span>TECH</a>
+                <li><a href="index.html#alerta">Alertas</a></li>
+                <li><a href="apiarios.html">Apiários</a></li>
+                <li><a href="#">Histórico</a></li>
+                <li><a href="#">Suporte</a></li>
+            </ul>
+        </nav>
+       
+        <nav id="menu-user">
+           
+            <input type="search" placeholder="Digite sua pesquisa">
+            <ul>
+                <a href="#" id="user-img"><img src="/img/user.png" alt=""></a>
+                <li><a href="#">Sair</a></li>
+            </ul>
+        </nav>
+    
+        <div id="conteudo">
+        
+            <h2>Apiários</h2>
+
+            <select name="#" id="#">
+                <option value="- Selecione o Apiário- ">- Selecione o Apiário -</option>
+                <option value="Apiario1">Apiário I</option>
+                <option value="Apiario2">Apiário II</option>
+            </select>
+            
+            <p class="titulo-grafico">Apiário I - <span class="live">LIVE</span></p>
+            <div class="apiario-grafico">
+                <div class="status-apiario">
+                    <p>⚡Sensor 1 - Interno</p>
+                    <p>Status - <span class="ativo">Ativo</span></p>
+                    <p>Temperatura Agora</p>
+                    <p id="temp-apiario" class="temp-alerta temp-ideal">30°C</p>
+                </div>
+                    <div class="grafico grafico-linhas">
+                        <canvas id="myChart" ></canvas>
+                    </div>
+            </div>
+
+            <p class="titulo-grafico">Apiário II - <span class="live">LIVE</span></p>
+            <div class="apiario-grafico">
+                <div class="status-apiario">
+                    <p>⚡Sensor 2 - Interno</p>
+                    <p>Status - <span class="ativo">Ativo</span></p>
+                    <p>Temperatura Agora</p>
+                    <p id="temp-apiario" class="temp-alerta temp-ideal">32°C</p>
+                </div>
+                <div class="grafico grafico-linhas">
+                    <canvas id="myChart2" ></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const labels = [
+    '(00:00)',
+    '(01:00)',
+    '(02:00)',
+    '(03:00)',
+    '(04:00)',
+    '(05:00)',
+    '(06:00)',
+    '(07:00)',
+    '(08:00)',
+    '(09:00)',
+    '(10:00)',
+    '(11:00)',
+    '(12:00)',
+    '(13:00)',
+    '(14:00)',
+    '(15:00)',
+    '(16:00)',
+    '(17:00)',
+    '(18:00)',
+    '(19:00)',
+    '(20:00)',
+    '(21:00)',
+    '(22:00)',
+    '(23:00)',
+    ];
+    
+    const data = {
+        labels: labels,
+        datasets: [{
+            label: 'Temperatura interna',
+            backgroundColor: 'rgb(235, 232, 56)',
+            borderColor: 'rgb(235, 232, 56)',
+            data: [30, 31, 32, 32, 32, 28, 33, 34, 35, 35, 34, 33, 36, 34, 33, 33, 34, 35, 33, 33, 33, 32, 31, 32],
+            },
+            
+            {label: 'Temperatura externa',
+            backgroundColor: '#74b8ea',
+            borderColor: '#74b8ea',
+            data: [10, 11, 11, 12, 12, 15, 18, 20, 21, 23, 25, 27, 28, 30, 30, 29, 26, 25, 22, 21, 20, 20, 19, 17]
+            }
+    ]
+    };
+    const data2 = {
+        labels: labels,
+        datasets: [{
+            label: 'Temperatura interna',
+            backgroundColor: 'rgb(235, 232, 56)',
+            borderColor: 'rgb(235, 232, 56)',
+            data: [32, 32, 33, 33, 34, 29, 30, 31, 31, 32, 32, 32, 33, 34, 33, 34, 34, 35, 35, 34, 33, 33, 32, 32],
+            },
+            
+            {label: 'Temperatura externa',
+            backgroundColor: '#74b8ea',
+            borderColor: '#74b8ea',
+            data: [10, 11, 11, 12, 12, 15, 18, 20, 21, 23, 25, 27, 28, 30, 30, 29, 26, 25, 22, 21, 20, 20, 19, 17]
+            }
+    ]
+    };
+        
+    const config = {
+        type: 'line',
+        data: data,
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+        }
+        };
+
+    const config2 = {
+         type: 'line',
+        data: data2,
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+        }
+    };
+
+</script>
+<script>
+    const myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+    );
+    const myChart2 = new Chart(
+      document.getElementById('myChart2'),
+      config2
+    );
+  </script>

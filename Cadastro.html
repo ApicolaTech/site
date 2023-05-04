@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/Cadastro.css">
+    <link rel="stylesheet" href="Cadastro.css">
     <title>Tela de Cadastro 1</title>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" onsubmit="return checkForm()">
         <div id="main">
-            <img src="./src/seta-esquerda.png">
+            <img src="./Imagens Site/seta-esquerda.png">
             <div>
                 <h1>Cadastrar</h1>
             </div>
@@ -22,18 +22,34 @@
                 </span>
             </div>
             <div class="inputs">
-                <h3>Nome Completo</h3><br>
-                <input placeholder="Your Name" id="nomeI" />
+                <h3>Nome</h3><br>
+                <input 
+                placeholder="Your Name" 
+                id="nomeI" 
+                />
+            </div>
+
+            <div class="inputs">
+                <h3>Sobrenome</h3><br>
+                <input 
+                placeholder="Lass Name" 
+                id="nomeI" 
+                />
             </div>
 
             <div class="inputs">
                 <h3>E-mail</h3><br>
-                <input placeholder="Your e-mail" id="emailI" />
+                <input placeholder="name@example.com"
+                 id="emailI" 
+                 />
             </div>
 
             <div class="inputs">
                 <h3>Senha</h3><br>
-                <input placeholder="Password" type="password" id="passI" />
+                <input placeholder="Password"
+                 type="password" 
+                 id="passI" 
+                 />
             </div>
             <br>
             <a href="Cadastro2.html"><button onclick="continuar()">Continuar</button></a>
@@ -41,16 +57,18 @@
         </div>
     </div>
     <div class="container2">
-
-        <img id="LogoEmp" src="./src/LogoEmpresa.png">
-        <img id="ImgPag" src="./src/ImagemTelas.png" width="600px">
-
+        <img id="LogoEmp" src="./Imagens Site/LogoEmpresa.png">
+        <img id="ImgPag" src="./Imagens Site/ImagemTelas.png" width="600px">
     </div>
+    <div id="div_mensagem"></div>
 </body>
-
 </html>
 <script>
-    function continuar() {
-
-    }
+       function verSenha() {
+          var senha = document.getElementById("passI").value;
+          if(senha.length !== 8) {
+           alert("Defina uma senha com 8 caracteres!")
+           return false;
+          } 
+       }
 </script>

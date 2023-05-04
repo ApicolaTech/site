@@ -11,12 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style/login.css" />
+    <link href='https://fonts.googleapis.com/css?family=Inria Serif' rel='stylesheet'>
+    <link rel="stylesheet" href="login.css" />
   </head>
 
   <body>
-    <div id="header">
-      <img class="logo" src="./src/LogoEmpresa3.png" alt="logo" />
+    <div class="header">
+      <h1>Apícola Tech</h1>
     </div>
     <div id="main">
       <div id="posicao">
@@ -30,7 +31,7 @@
           <input
             type="email"
             id="email"
-            placeholder="nome@exemplo.com"
+            placeholder="name@example.com"
             onkeydown="verEmail()"
           /> <br>
           <span id="erroEmail"></span>
@@ -40,16 +41,16 @@
           <input
             id="senha"
             type="password"
-            placeholder="Senha"
+            placeholder="Password"
             onkeydown="verSenha()"
           />
           <span id="visualSenha"
-            ><img id="olhoSenha" onclick="ocultaSenha()" src="./src/closed.png" alt=""
+            ><img id="olhoSenha" onclick="ocultaSenha()" src="./Imagens Site/closed.png" alt=""
           /></span> <br>
           <span id="erroSenha"></span>
         </div>
         <div id="linkSenha">
-          <a href="#">Esqueceu a senha?</a>
+          <a href="./TelaRecuperaçãoSenha.html">Esqueceu a senha?</a>
         </div>
         <div id="entrar">
           <a id="linkbtn" onclick="entrar()">Entrar</a>
@@ -60,10 +61,10 @@
       </div>
     </div>
     <div id="erro">
-      <span id="msgErro"> 
+      <span id="msgErro">
         <div>
           <h1>Credenciais Inválidas</h1>
-          <img id="botaox" src="./src/close.png" onclick="credencialErro()" alt="" />
+          <img id="botaox" src="./Imagens Site/close.png" onclick="credencialErro()" alt="" />
         </div>
         <div>
           <h3>Cheque se suas informações estão corretas e tente novamente</h3>
@@ -118,8 +119,8 @@
    function entrar() {
         var email = document.querySelector('#email').value;
         var senha = document.querySelector('#senha').value;
-        if (email == "caramico@gmail.com" && senha == "sptechSchool") {
-            location.href = "./servicos.html";
+        if (email == "caramico@gmail.com" && senha == "fernanda123") {
+            location.href = "./TelaDash.html";
         } else {
           erro.style.display = 'block'
         }
