@@ -62,7 +62,7 @@
     var valorTotalEsperado =
       mediaMel *
       precoMel; /* multiplica o mel feito pela média de abelhas pelo preço */
-    var porcentagemEsperado = (mel/mediaMel)*100;
+    var porcentagemEsperado = (mel/mediaMel)*100 - 100;
 
       ; /* calcula a porcentagem de um mel sobre o outro(média) */
     producaoPorcentagem.innerHTML = ``
@@ -72,7 +72,7 @@
 
     } else if (mel < mediaMel) {
         producaoPorcentagem.innerHTML = `<img src="./src/decrease.png" alt="">
-                <span>Sua produção de mel ficou ${porcentagemEsperado.toFixed(2)}% <span style="color: #FF0000;">abaixo</span> para <b style="color: #FFFF00;">${apiario}</b> apiários, e seu faturamento foi de apenas <b style="color: #ff0000;">R$${valorTotal}</b>.</span>`;
+                <span>Sua produção de mel ficou ${Math.abs(porcentagemEsperado.toFixed(2))}% <span style="color: #FF0000;">abaixo</span> para <b style="color: #FFFF00;">${apiario}</b> apiários, e seu faturamento foi de apenas <b style="color: #ff0000;">R$${valorTotal}</b>.</span>`;
         producaoApiario.innerHTML += `<img src="./src/apiary.png" alt="">
                 <span>A produção média de <span style="color: #FFFF00;">${apiario}</span> apiários é de <span style="color: #FFD700;">${mediaMel}kg</span> enquanto o seu foi de meramente <span style="color: #f52d2d;">${mel}kg</span>, <span style="color: #00ff2a;">${mediaMel-mel}kg</span> a menos</span>`;
         venda.innerHTML += `<img src="./src/monitoring.png" alt="">
