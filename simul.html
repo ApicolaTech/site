@@ -62,8 +62,7 @@
     var valorTotalEsperado =
       mediaMel *
       precoMel; /* multiplica o mel feito pela média de abelhas pelo preço */
-    var porcentagemEsperado = ((mediaMel - mel) / mel) * 100;
-    var porcentagemEsperado = ((mel - mediaMel) / mediaMel) * 100;
+    var porcentagemEsperado = (mel/mediaMel)*100;
 
       ; /* calcula a porcentagem de um mel sobre o outro(média) */
     producaoPorcentagem.innerHTML = ``
@@ -88,7 +87,7 @@
                 <span>A nossa solução te dará uma visão detalhada de seus apiários, permitindo uma análise precisa de gargalos, pontos de melhoria e como manter sua produção, consequentemente, seus resultados e com isso conservar seu <b style="color: #00ff2a;">faturamento</b></span>
             `;
     } else if (mel > mediaMel) {
-      producaoPorcentagem.innerHTML = `<img src="./src/investment.png" alt="">
+      producaoPorcentagem.innerHTML = `<img src="./src/trend.png" alt="">
                 <span>Sua produção de mel ficou ${porcentagemEsperado.toFixed(2)}% <span style="color: #00ff2a;">acima</span> para <b style="color: #FFFF00;">${apiario}</b> apiários, e seu faturamento foi de <b style="color: #00ff2a;">R$${valorTotal}</b>.</span>`;
       producaoApiario.innerHTML += `<img src="./src/apiary.png" alt="">
                 <span>A produção média de <span style="color: #FFFF00;">${apiario}</span> apiários é de <span style="color: #FFD700;">${mediaMel}kg</span> enquanto o seu foi de <span style="color: #00ff2a;">${mel}kg</span>, <span style="color: #00ff2a;">${mel-mediaMel}kg</span> a mais</span>`;
