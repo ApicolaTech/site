@@ -264,8 +264,7 @@ input[type='search']:focus{
 table{
     background-color: #111;
     width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
+     border-spacing: 0;
 }
 #tabela-risco{
     width: 80%;
@@ -281,12 +280,22 @@ th, td{
     border: 1px solid #333;
 }
 
+.titulo-tabela{
+    text-align: center;
+}
+
 .titulo-critico{
     border-color: red;
 }
+.titulo-emergencia{
+    border-color: orange;
+}
+.titulo-emergencia2{
+    border-color: orange;
+}
 
 .titulo-alerta{
-    border-color: orange;
+    border-color: yellow;
 }
 
 .titulo-ideal{
@@ -295,6 +304,7 @@ th, td{
 
 .acompanhamento{
     width: 100%;
+    height: 50%;
     padding: 1.5em;
     border: 1px solid #222;
     gap: 1em;

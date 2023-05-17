@@ -50,7 +50,7 @@
           <span id="erroSenha"></span>
         </div>
         <div id="linkSenha">
-          <a href="./TelaRecuperaçãoSenha.html">Esqueceu a senha?</a>
+          <a href="./TelaRecuperaçãoSenha1.html">Esqueceu a senha?</a>
         </div>
         <div id="entrar">
           <a id="linkbtn" onclick="entrar()">Entrar</a>
@@ -93,11 +93,11 @@
     }
     function verSenha() {
       var senha = document.querySelector("#senha").value;
-      if (senha.length<7) {
+      if (senha.length < 11) {
         document.querySelector('#senha').style.borderBottom = "1px solid #FF3333";
         document.querySelector('#senha').style.boxShadow = " 0px 10px 19px -19px #FF3333";
         erroSenha.style.color = '#FF3333';
-        erroSenha.innerHTML = `A senha possui pelo menos 8 caracteres`
+        erroSenha.innerHTML = `A senha possui pelo menos 11 caracteres`
     
       } else{
         document.querySelector('#senha').style.borderBottom = "1px solid #FFFFFF";

@@ -33,7 +33,7 @@
                 <h3>Sobrenome</h3><br>
                 <input 
                 placeholder="Lass Name" 
-                id="nomeI" 
+                id="sobrenomeI" 
                 />
             </div>
 
@@ -60,15 +60,29 @@
         <img id="LogoEmp" src="./Imagens Site/LogoEmpresa.png">
         <img id="ImgPag" src="./Imagens Site/ImagemTelas.png" width="600px">
     </div>
-    <div id="div_mensagem"></div>
+    
 </body>
 </html>
 <script>
-       function verSenha() {
-          var senha = document.getElementById("passI").value;
-          if(senha.length !== 8) {
-           alert("Defina uma senha com 8 caracteres!")
-           return false;
-          } 
-       }
+      function continuar(){
+        var email = emailI.value
+        var senha = passI.value
+        var nome = nomeI.value
+        var sobrenome = sobrenomeI.value
+
+        if(email.indexOf('@') == -1 || email.indexOf('.') == -1){
+            alert (`Insira um email válido`)
+            event.preventDefault()
+        } else {
+            alert ('Falta pouco!')
+        }
+
+        if(nome == '' || sobrenome == ''|| senha == ''){
+            alert('Insira valores válidos')
+        }
+      }
+
+    
+          
+       
 </script>
