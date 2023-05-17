@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -278,4 +279,286 @@
       config2
     );
   </script>
+=======
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/TelaDash.css">
+    <link rel="icon" href="./src/Imagens Site/colmeia-de-abelhas.png">
+    <title>Apícola Tech - Dashboard</title>
+</head>
+<body>
+    <div id="container">
+    <nav id="menu-dashboard">
+        <ul>
+            <a href="TelaDash.html" id="logo"><span>APÍCOLA</span>TECH</a>
+            <li><a href="#alerta">Alertas</a></li>
+            <li><a href="apiarios.html">Apiários</a></li>
+            <li><a href="#">Histórico</a></li>
+            <li><a href="#">Suporte</a></li>
+        </ul>
+    </nav>
+   
+    <nav id="menu-user">
+       
+        <input type="search" placeholder="Digite sua pesquisa">
+        <ul>
+            <a href="#" id="user-img"><img src="./src/Imagens Site/user.png" alt=""></a>
+            <li><a href="index.html">Sair</a></li>
+        </ul>
+    </nav>
+
+    <div id="conteudo">
+        <h1>Olá, Fernanda. Seja bem vinda!</h1>
+        
+        <div id="info">
+            <div id="alertas" class="info-card">
+                <p class="titulo-card">⚠️ Alertas</p>
+                <p style="color: red;" class="valor-card">2</p>
+                <a href="#alerta">Ver mais > </a>
+            </div>
+            <div id="ideal" class="info-card">
+                <p class="titulo-card">🌡️ Temp interna ideal</p>
+                <p class="valor-card">30-35°C</p>
+                <a href="https://abelha.org.br/pesquisador-da-dicas-para-manter-producao-de-mel-em-climas-extremos/">Saiba mais ></a>
+            </div>
+            <div id="colmeias" class="info-card">
+                <p class="titulo-card">🐝 Total Apiários</p>
+                <p class="valor-card">2</p>
+                <a href="apiarios.html">Ver apiário ></a>
+            </div>
+            <div id="sensores" class="info-card">
+                <p class="titulo-card">⚡ Sensores Ativos</p>
+                <p class="valor-card">3</p>
+                <a href="#acompanhamento">Ver Tabela ></a>
+            </div>
+        </div>
+
+        <h2 id="acompanhamento">Sensores</h2>
+
+        <section class="acompanhamento">
+            <table>
+                <tr>
+                    <th>N° Sensor</th>
+                    <th>N° Apiário</th>
+                    <th>Local</th>
+                    <th>Temperatura atual</th>
+                    <th>Status sensor</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Apiário I</td>
+                    <td>Interno</td>
+                    <td>34</td>
+                    <td class="ativo">Ativo</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Apiário II</td>
+                    <td>Interno</td>
+                    <td>32</td>
+                    <td class="ativo">Ativo</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>X</td>
+                    <td>Externo</td>
+                    <td>22</td>
+                    <td class="ativo">Ativo</td>
+                </tr>
+            </table>
+        </section>
+
+        <h2 id="alerta">Alertas - Tabela de riscos</h2>
+            <section class="acompanhamento">
+                <table id="tabela-risco">
+                    <tr>
+                        <p class="titulo-tabela">Temperatura interna ideal</p>
+                        <th class="titulo-critico">Crítico</th>
+                        <th class="titulo-emergencia">Emergência</th>
+                        <th class="titulo-alerta">Alerta</th>
+                        <th class="titulo-ideal">Ideal</th>
+                        <th class="titulo-emergencia2">Emergência</th>
+                        <th class="titulo-critico">Crítico</th>
+                    </tr>
+                    <tr>
+                        <td class="titulo-critico">30.0°C-</td>
+                        <td class="titulo-emergencia">31.5°C</td>
+                        <td class="titulo-alerta">32.5°C-</td>
+                        <td class="titulo-ideal" >33.1°C - 33.5°C</td>
+                        <td class="titulo-emergencia2">34.3</td>
+                        <td class="titulo-critico">35.0°C + </td>
+                    </tr>
+                    </table>
+                <table id="tabela-risco">
+                    <tr>
+                        <p class="titulo-tabela">Temperatura externa ideal</p>
+                        <th class="titulo-critico">Crítico</th>
+                        <th class="titulo-emergencia">Emergência</th>
+                        <th class="titulo-alerta">Alerta</th>
+                        <th class="titulo-ideal">Ideal</th>
+                        <th class="titulo-emergencia2">Emergência</th>
+                        <th class="titulo-critico">Crítico</th>
+                        </tr>
+                    <tr>
+                        <td class="titulo-critico">22°C-</td>
+                        <td class="titulo-emergencia">31.5°C</td>
+                        <td class="titulo-alerta">24.4°C-</td>
+                        <td class="titulo-ideal">25.1°C - 25.7°C</td>
+                        <td class="titulo-emergencia2">31.5°C</td>
+                        <td class="titulo-critico">27°C +</td>
+                    </tr>
+                </table>
+            </section>
+        <div>
+            <p class="titulo-grafico">Apiário I - 04/05/2023</p>
+            <div class="alerta-apiario">
+               <div class="alerta-scroll">
+                    <div class="alerta-grafico critico">
+                        <p>Alerta de temperatura interna baixa</p>
+                        <p class="temp-alerta temp-critico">30°C</p>
+                        <p id="temp-hora">Hoje - 05:00h</p>
+                    </div>
+                    <div class="alerta-grafico critico">
+                        <p>Alerta de temperatura externa baixa</p>
+                        <p class="temp-alerta temp-critico">19°C</p>
+                        <p id="temp-hora">Hoje - 01:00h</p>
+                    </div>
+                    <div class="alerta-grafico alerta">
+                        <p>Alerta de temperatura interna baixa</p>
+                        <p class="temp-alerta alerta-temp">31°C</p>
+                        <p id="temp-hora">Hoje - 05:00h</p>
+                    </div>
+               </div>
+                <div class="grafico grafico-linhas">
+                    <canvas id="myChart" ></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p class="titulo-grafico">Apiário II - 04/05/2023</p>
+            <div class="alerta-apiario">
+               <div class="alerta-scroll">
+                    <div class="alerta-grafico alerta">
+                        <p>Alerta de temperatura interna baixa</p>
+                        <p class="temp-alerta alerta-temp">31°C</p>
+                        <p id="temp-hora">Hoje - 05:00h</p>
+                    </div>
+                    <div class="alerta-grafico critico">
+                        <p>Alerta de temperatura externa baixa</p>
+                        <p class="temp-alerta temp-critico">19°C</p>
+                        <p id="temp-hora">Hoje - 01:00h</p>
+                    </div>
+                    <div class="alerta-grafico alerta">
+                        <p>Alerta de temperatura interna baixa</p>
+                        <p class="temp-alerta alerta-temp">31°C</p>
+                        <p id="temp-hora">Hoje - 05:00h</p>
+                    </div>
+               </div>
+                <div class="grafico grafico-linhas">
+                    <canvas id="myChart2" ></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    const labels = [
+    '(00:00)',
+    '(01:00)',
+    '(02:00)',
+    '(03:00)',
+    '(04:00)',
+    '(05:00)',
+    '(06:00)',
+    '(07:00)',
+    '(08:00)',
+    '(09:00)',
+    '(10:00)',
+    '(11:00)',
+    '(12:00)',
+    '(13:00)',
+    '(14:00)',
+    '(15:00)',
+    '(16:00)',
+    '(17:00)',
+    '(18:00)',
+    '(19:00)',
+    '(20:00)',
+    '(21:00)',
+    '(22:00)',
+    '(23:00)',
+    ];
+    
+    const data = {
+        labels: labels,
+        datasets: [{
+            label: 'Temperatura interna',
+            backgroundColor: 'rgb(235, 232, 56)',
+            borderColor: 'rgb(235, 232, 56)',
+            data: [33.1, 33.2, 33.2, 33.5, 33.1, 30.0, 32.5, 33.1, 33.2, 33.8, 33.9, 34.0, 34.1, 34.2, 34.3, 34.3, 34.6, 34.8, 34.9, 35.0, 35.1, 35.0, 34.5, 33.9],
+            },
+            
+            {label: 'Temperatura externa',
+            backgroundColor: '#74b8ea',
+            borderColor: '#74b8ea',
+            data: [21.9, 20.9, 21.9, 22.0, 22.0, 19.0, 22.4, 22.6, 22.8, 25.0, 27.0, 27.0, 28.9, 27.8, 26.9, 25.0, 24.0, 24.5, 24.3, 24.2, 22.0, 22.7, 22.9, 22.0]
+            }
+            
+    ]
+    };
+    const data2 = {
+        labels: labels,
+        datasets: [{
+            label: 'Temperatura interna',
+            backgroundColor: 'rgb(235, 232, 56)',
+            borderColor: 'rgb(235, 232, 56)',
+            data:[33.1, 33.2, 33.2, 33.5, 33.1, 31.4, 32.5, 33.1, 33.2, 33.8, 33.9, 34.0, 34.1, 34.2, 34.3, 34.3, 34.6, 34.8, 34.9, 35.0, 35.1, 35.0, 34.5, 33.9],
+            },
+            
+            {label: 'Temperatura externa',
+            backgroundColor: '#74b8ea',
+            borderColor: '#74b8ea',
+            data: [21.9, 20.8, 21.7, 22.0, 22.0, 19.0, 22.4, 22.6, 22.8, 25.0, 27.0, 27.0, 28.9, 27.8, 26.9, 25.0, 24.0, 24.5, 24.3, 24.2, 22.0, 22.7, 22.9, 22.0]
+            }
+    ]
+    };
+        
+    const config = {
+        type: 'line',
+        data: data,
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+        }
+        };
+
+    const config2 = {
+        type: 'line',
+        data: data2,
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+        }
+       };
+
+</script>
+<script>
+    const myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+    );
+    const myChart2 = new Chart(
+      document.getElementById('myChart2'),
+      config2
+    );
+  </script>
+>>>>>>> 70aa7fb256468e38817491bf80f21b9c6511e936
 </html>

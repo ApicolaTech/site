@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recuperação de Senha</title>
     <link href='https://fonts.googleapis.com/css?family=Inria Serif' rel='stylesheet'>
-    <link rel="stylesheet" href="TelaRecuperaçãoSenha.css">
+    <link rel="stylesheet" href="./style/TelaRecuperaçãoSenha.css">
 </head>
 <body>
     <div class="codigoSeguranca">
@@ -33,7 +33,7 @@
         mensagem.innerHTML = ''
 
         if(codigo == 123456){
-            window.location.href = './TelaDash.html'
+            window.location.href = './novasenha.html'
         } else {
             alert('Código errado, insira novamente' )
         }
